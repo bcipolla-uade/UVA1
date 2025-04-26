@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #F53E22;
+}
+body{
+    background-color: #F08251;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+ul a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: #F0B651;
+}
+
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+#avisos h3{
+    margin: 2em;
+    text-align: center;
+    border-bottom:solid #F0B651;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+#tareas{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    
+    
+}
+#examenes li{
+    
+    list-style: none;
+}
+.diseño-av{
+    font-weight: bold;
+    border: solid #F0B651 ;
+    padding: 1rem;
+    
+    
+}
+
+#tabla{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+main h1{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: auto;
+   
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.contenedor-principal {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.lado-izquierdo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+}
+
+.lado-derecho {
+    background-color: #F09E52;
+    padding: 2em;
+    flex: 2;
+}
+
+.lado-izquierdo section {
+    background-color: #F09E52;
+    padding: 2em;
+}
+h2,h3{
+    margin-bottom: 1em;
+}
+.disenio{
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F0B651;
+    font-weight: bold;
+    margin-bottom: 2em;
+    
+}
+.lado-izquierdo img{
+    border: dashed  #F0B651;
+}
+.contacto{
+    padding-top: 2em;
+}
+.correo a{
+    font-weight: bold;
+    text-decoration: dotted;
+    color: #F53E22;
+    
+}
+.correo{
+    margin-top: 2rem;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tareas, #tabla {
+        padding: 1em;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .lado-derecho, .lado-izquierdo section {
+        padding: 1.5em;
+    }
+
+    footer {
+        position: static;
+        margin-top: 2rem;
+    }
+}

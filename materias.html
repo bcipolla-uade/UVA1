@@ -4,57 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materias</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h2>Diseño y Desarrollo Web</h2>
-        <a href="https://virtualbsp.uade.edu.ar/d2l/home/43347">Acceso a la materia</a>
+       <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/bcipolla-uade">Proyectos de la materia</a></li>
+            <li><a href="sobremi.html">Sobre mí</a></li>
+            <li><a href="avisos.html">Avisos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            
+        </ul>
+    </nav>
     </header>
     <main>
-        <section>
-            <h3>Acceso a otras secciones</h3>
-            <ul>
-                <li><a href="sobremi.html">Sobre mí</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="avisos.html">Avisos</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Bibliografía</h3>
-            <p>HTML5 Pocket Reference: Quick, Comprehensive, Indispensable de Jennifer Niederst Robbins, publicado por O'Reilly Media en su 5ta edición (2013).</p>
-        </section>
-        <section>
-            <h3>Fecha de Exámenes</h3>
-            <ul>
-                <li>Primer Parcial: 29 de abril de 2025</li>
-                <li>Segundo Parcial: 24 de junio de 2025</li>
-                <li>Examen Final: 8 de julio de 2025 opción adelantada</li>
-                <li>Examen Final: 22 de julio de 2025 opción regular</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Actividades</h3>
-            <ul>
-            <li>Proyecto 1: Introducción - Entrega: 31 de Marzo de 2025</li>
-            <li>Proyecto 2: Etiquetas - Entrega: 31 de Marzo de 2025</li>
-            <li>Proyecto 3: Ejercicio integrador - Entrega 31 de marzo de 2025</li>
-            <li>UVAs
-                <ul>
-                <li>UVA1
+        <h1>Diseño y Desarrollo Web</h1>
+        <div class="contenedor-principal">
+            <div class="lado-izquierdo">
+                <section id="examenes">
+                    <h2>Fecha de Exámenes</h2>
                     <ul>
-                    <li><a href="sobremi.html">Actividad 1</a></li>
-                    <li><a href="materias.html">Actividad 2</a></li>
-                    <li><a href="contacto.html">Actividad 3</a></li>
+                        <li>Primer Parcial: 29 de abril de 2025</li>
+                        <li>Segundo Parcial: 24 de junio de 2025</li>
+                        <li>Examen Final: 8 de julio de 2025 opción adelantada</li>
+                        <li>Examen Final: 22 de julio de 2025 opción regular</li>
                     </ul>
-                </li>
-                </ul>
-            </li>
-            </ul>
-        </section>
+                </section>
+                <section>
+                    <h3>Bibliografía</h3>
+                    <p>HTML5 Pocket Reference: Quick, Comprehensive, Indispensable de Jennifer Niederst Robbins, publicado por O'Reilly Media en su 5ta edición (2013).</p>
+                </section>
+            </div>
+            <div class="lado-derecho">
+                <section>
+                    <h3>Actividades</h3>
+                    <ul>
+                        <li>Proyecto 1: Introducción - Entrega: 31 de Marzo de 2025</li>
+                        <li>Proyecto 2: Etiquetas - Entrega: 31 de Marzo de 2025</li>
+                        <li>Proyecto 3: Ejercicio integrador - Entrega 31 de marzo de 2025</li>
+                        <li>UVAs
+                            <ul>
+                                <li>UVA1
+                                    <ul>
+                                        <li><a href="sobremi.html">Actividad 1</a></li>
+                                        <li><a href="materias.html">Actividad 2</a></li>
+                                        <li><a href="contacto.html">Actividad 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </main>
+    
     <footer>
-        <p>&copy; 2025</p>
+        <p>Curso: 516035 / Profesora: Patricia Litovicius</p>
     </footer>
 </body>
 </html>
