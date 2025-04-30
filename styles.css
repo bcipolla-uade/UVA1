@@ -168,3 +168,36 @@ h2,h3{
         margin-top: 2rem;
     }
 }
+
+#tabla {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    overflow-x: auto; 
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px; 
+    background-color: white;
+}
+
+
+th, td {
+    border: 1px solid #F0B651;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+
+th {
+    background-color: #F53E22;
+    color: white;
+    text-transform: uppercase;
+}
+.enlaces, .subrayado{
+    text-decoration: underline;
+    color: red;
+}
