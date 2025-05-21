@@ -14,10 +14,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   if (!subject) errors.push('Ingrese el asunto.');
   if (!message) errors.push('Ingrese un mensaje.');
 
+  const msgDiv = document.getElementById('form-msg');
   if (errors.length > 0) {
-    alert('Errores:\n' + errors.join('\n'));
+    msgDiv.innerHTML = '<div class="alert alert-danger">' + errors.join('<br>') + '</div>';
   } else {
-    alert(`Gracias por su contacto, ${name}. En breve le estaré respondiendo.`);
+    msgDiv.innerHTML = `<div class="alert alert-success">Gracias por su contacto, <b>${name}</b>.<br>En breve le estaré respondiendo.</div>`;
     this.reset();
   }
 });
