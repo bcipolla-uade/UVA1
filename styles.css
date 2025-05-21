@@ -29,7 +29,7 @@ nav ul a {
 }
 header nav ul a,
 header nav .nav-link {
-    color: #c19b9b !important; /* Cambia este valor por el color que desees */
+    color: #c19b9b !important; 
 }
 nav a:hover{
     color: #F0B651;
