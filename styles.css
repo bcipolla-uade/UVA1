@@ -5,10 +5,10 @@
     font-family: Arial, sans-serif;
 }
 header{
-    background-color: #F53E22;
+    background-color: #af4636;
 }
 body{
-    background-color: #F08251;
+    background-color: #dbdbdb;
 }
 nav ul{
     list-style: none;
@@ -27,10 +27,17 @@ nav ul a {
     font-weight: bold;
     text-transform: uppercase;
 }
+header nav ul a,
+header nav .nav-link {
+    color: #c19b9b !important; /* Cambia este valor por el color que desees */
+}
 nav a:hover{
     color: #F0B651;
 }
-
+header nav ul a:hover,
+header nav .nav-link:hover {
+    color: #F0B651 !important;
+}
 
 footer {
     text-align: center;
@@ -56,21 +63,15 @@ footer {
     display: flex;
     justify-content: center;
     padding: 2em;
-    
-    
 }
 #examenes li{
-    
     list-style: none;
 }
 .diseño-av{
     font-weight: bold;
     border: solid #F0B651 ;
     padding: 1rem;
-    
-    
 }
-
 #tabla{
     display: flex;
     justify-content: center;
@@ -80,7 +81,6 @@ main h1{
     text-align: center;
     margin-bottom: 1em;
     margin-top: auto;
-   
 }
 main {
     display: flex;
@@ -94,22 +94,19 @@ main {
     max-width: 1000px;
     gap: 20px;
 }
-
 .lado-izquierdo {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 2rem;
 }
-
 .lado-derecho {
-    background-color: #F09E52;
+    background-color: #c4bcb6;
     padding: 2em;
     flex: 2;
 }
-
 .lado-izquierdo section {
-    background-color: #F09E52;
+    background-color: #c4bcb6;
     padding: 2em;
 }
 h2,h3{
@@ -119,13 +116,12 @@ h2,h3{
     list-style: none;
     text-align: center;
     text-transform: uppercase;
-    color: #F0B651;
+    color: #a88e60;
     font-weight: bold;
     margin-bottom: 2em;
-    
 }
 .lado-izquierdo img{
-    border: dashed  #F0B651;
+    border: dashed  #a99e8b;
 }
 .contacto{
     padding-top: 2em;
@@ -133,36 +129,35 @@ h2,h3{
 .correo a{
     font-weight: bold;
     text-decoration: dotted;
-    color: #F53E22;
-    
+    color: #0d0c0c;
 }
 .correo{
     margin-top: 2rem;
 }
+.mi-footer{
+    background-color: #1c1c1c;  
+    color: white;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
-
     .contenedor-principal {
         flex-direction: column;
         align-items: center;
     }
-
     #tareas, #tabla {
         padding: 1em;
     }
-
     main {
         padding: 2rem;
     }
-
     .lado-derecho, .lado-izquierdo section {
         padding: 1.5em;
     }
-
     footer {
         position: static;
         margin-top: 2rem;
@@ -184,13 +179,11 @@ table {
     background-color: white;
 }
 
-
 th, td {
     border: 1px solid #F0B651;
     padding: 0.75rem;
     text-align: center;
 }
-
 
 th {
     background-color: #F53E22;
