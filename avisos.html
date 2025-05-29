@@ -4,41 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avisos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="sobremi.html">Sobre mi</a></li>
-            <li><a href="materias.html">Materias</a></li>
-            
-        </ul>
-    </nav>
-</header>
-    <section id="avisos">
-        <h3>Lista de tareas pendientes</h3>
-    </section>
-    <section id="tareas">
-    
-    <ul>
-        <div class="disenio">
-        <li >Diseño Web</div>
-            <ul class="diseño-av">
-                <li>Practicar estructura básica HTML5</li>
-                <li>Crear un sitio responsive usando Flexbox o Grid</li>
-                <li>Aplicar principios de diseño visual (colores, tipografías)</li>
-                <li>Optimizar imágenes y recursos para la web</li>
-                <li>Preparar presentación final del proyecto</li>
-            </ul>
-        </li>
-        
-    </ul>
-</section>
+        <nav class="navbar navbar-expand-lg" style="background-color: #3b5998;">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand text-white text-decoration-none" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="materias.html">Materias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="sobremi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="avisos.html">Avisos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" id="darkModeToggle" aria-label="Cambiar tema de la página">
+                                    <img src="img/sun-fill.svg" alt="" width="20" height="20" style="filter: invert(1);" aria-hidden="true">
+                                    <span class="visually-hidden">Tema actual</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="darkModeToggle">
+                                    <li>
+                                        <button class="dropdown-item" data-theme="light">
+                                            <img src="img/sun-fill.svg" alt="" width="16" height="16" class="me-2" aria-hidden="true">
+                                            <span>Modo Claro</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item" data-theme="dark">
+                                            <img src="img/moon-stars-fill.svg" alt="" width="16" height="16" class="me-2" aria-hidden="true">
+                                            <span>Modo Oscuro</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow border-0 bg-light">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4 text-primary text-center">Avisos y tareas pendientes</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center" style="background: linear-gradient(90deg, #e9ecef 70%, #5bc0eb1a 100%); border-left: 5px solid #5bc0eb;">
+                                <span class="me-auto fw-semibold">Entrega de TP final de Diseño Web: 15/07</span>
+                                <span class="badge bg-warning text-dark rounded-pill ms-2 shadow-sm">Importante</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center" style="background: linear-gradient(90deg, #e9ecef 70%, #b0c4de1a 100%); border-left: 5px solid #b0c4de;">
+                                <span class="me-auto fw-semibold">Revisión de notas de Parcial 2</span>
+                                <span class="badge bg-info text-dark rounded-pill ms-2 shadow-sm">Notas</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center" style="background: linear-gradient(90deg, #e9ecef 70%, #222b381a 100%); border-left: 5px solid #222b38;">
+                                <span class="me-auto fw-semibold">Inscripción a recuperatorio</span>
+                                <span class="badge bg-secondary rounded-pill ms-2 shadow-sm">Recordatorio</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center" style="background: linear-gradient(90deg, #e9ecef 70%, #5bc0eb1a 100%); border-left: 5px solid #5bc0eb;">
+                                <span class="me-auto fw-semibold">Consultar dudas por mail antes del viernes</span>
+                                <span class="badge bg-success rounded-pill ms-2 shadow-sm">Comunicación</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         Derechos reservados
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="validacion.js"></script>
 </body>
 </html>
