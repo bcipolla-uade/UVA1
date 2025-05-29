@@ -346,12 +346,33 @@ body.dark-mode header nav .nav-link:hover {
     color: #b0c4de !important;
     text-decoration: underline;
 }
+/* Mejora visual para lista de tareas/avisos con Bootstrap */
 .list-group-item {
     border-radius: 0.5rem !important;
     margin-bottom: 0.5rem;
     border: none !important;
+    background: #fff !important;
+    color: #222 !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 .list-group-item:last-child {
     margin-bottom: 0;
+}
+
+/* Mejor contraste para modo oscuro */
+body.dark-mode .list-group-item {
+    background: #232a34 !important;
+    color: #e0e6ed !important;
+    border: none !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+
+/* Opcional: mejora para badges en modo oscuro */
+body.dark-mode .badge.bg-warning,
+body.dark-mode .badge.bg-info,
+body.dark-mode .badge.bg-secondary,
+body.dark-mode .badge.bg-success {
+    color: #232a34 !important;
+    background-color: #b0c4de !important;
 }
 
